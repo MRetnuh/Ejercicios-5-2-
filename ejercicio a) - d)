@@ -71,7 +71,7 @@ int main() {
             ejercicio_d();
             break;
         default:
-            printf("Opción no válida.\n");
+            printf("Ejercicio inexistente.\n");
             break;
     }
 
