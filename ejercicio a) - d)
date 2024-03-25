@@ -1,95 +1,79 @@
-ejercicio a)
+#include <stdio.h>
+#include <stdlib.h>
 
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(int argc, char *argv[]){
-int n1;
-puts("ingrese un numero:");
-scanf("%d", &n1);
-if(n1 > 0){
-    printf("Es positivo");
-}
-else{
-printf("es negativo");
-}
-return 0;
-
+void ejercicio_a() {
+    int n1;
+    puts("Ingrese un número:");
+    scanf("%d", &n1);
+    if(n1 > 0) {
+        printf("Es positivo\n");
+    } else {
+        printf("Es negativo\n");
+    }
 }
 
-ejercicio b)
-
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(int argc, char *argv[]){
-int n1;
-puts("ingrese un numero:");
-scanf("%d", &n1);
-if(n1 % 2 == 0){
-    printf("Es par");
-}
-else{
-printf("es impar");
-}
-return 0;
-
+void ejercicio_b() {
+    int n1;
+    puts("Ingrese un número:");
+    scanf("%d", &n1);
+    if(n1 % 2 == 0) {
+        printf("Es par\n");
+    } else {
+        printf("Es impar\n");
+    }
 }
 
-ejercicio c)
-
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(int argc, char *argv[]){
-int n1;
-puts("ingrese un numero:");
-scanf("%d", &n1);
-
-if(n1 % 2 == 0 && n1 % 3 == 0){
-    printf("Es multiplo de ambos");
-}
-else if(n1 % 3 == 0){
-    printf("Es multiplo de 3");
-}
-else if(n1 % 2 == 0){
-    printf("Es multiplo de 2");
-}
-    
-else{
-if(n1 % 3 == 0){
-    printf("es multiplo de 3");
-}
-else{
-    printf("no es multiplo de ninguno");
-}
-}
-return 0;
-
+void ejercicio_c() {
+    int n1;
+    puts("Ingrese un número:");
+    scanf("%d", &n1);
+    if(n1 % 2 == 0 && n1 % 3 == 0) {
+        printf("Es múltiplo de ambos\n");
+    } else if(n1 % 3 == 0) {
+        printf("Es múltiplo de 3\n");
+    } else if(n1 % 2 == 0) {
+        printf("Es múltiplo de 2\n");
+    } else {
+        printf("No es múltiplo de ninguno\n");
+    }
 }
 
-ejercicio d)
-
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(int argc, char *argv[]){
-int n1;
-int n2;
-int n3;
-puts("ingrese un numero:");
-scanf("%d", &n1);
-scanf("%d", &n2);
-scanf("%d", &n3);
-if(n1 > n2 && n1 > n3){
-    printf("n1 es el mayor");
+void ejercicio_d() {
+    int n1, n2, n3;
+    puts("Ingrese tres números:");
+    scanf("%d %d %d", &n1, &n2, &n3);
+    if(n1 > n2 && n1 > n3) {
+        printf("n1 es el mayor\n");
+    } else if(n2 > n3) {
+        printf("n2 es el mayor\n");
+    } else {
+        printf("n3 es el mayor\n");
+    }
 }
-else if(n2 > n3){
-    printf("n2 es el mayor");
-}
-else{
-    printf("n3 es el mayor");
-}
-return 0;
 
+int main() {
+    char opcion;
+
+    printf("Elige un ejercicio (a-d):\n");
+    scanf(" %c", &opcion);
+
+    switch(opcion) {
+        case 'a':
+            ejercicio_a();
+            break;
+        case 'b':
+            ejercicio_b();
+            break;
+        case 'c':
+            ejercicio_c();
+            break;
+        case 'd':
+            ejercicio_d();
+            break;
+        default:
+            printf("Opción no válida.\n");
+            break;
+    }
+
+    return 0;
 }
