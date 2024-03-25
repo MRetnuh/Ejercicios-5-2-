@@ -1,0 +1,95 @@
+ejercicio a)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+int n1;
+puts("ingrese un numero:");
+scanf("%d", &n1);
+if(n1 > 0){
+    printf("Es positivo");
+}
+else{
+printf("es negativo");
+}
+return 0;
+
+}
+
+ejercicio b)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+int n1;
+puts("ingrese un numero:");
+scanf("%d", &n1);
+if(n1 % 2 == 0){
+    printf("Es par");
+}
+else{
+printf("es impar");
+}
+return 0;
+
+}
+
+ejercicio c)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+int n1;
+puts("ingrese un numero:");
+scanf("%d", &n1);
+
+if(n1 % 2 == 0 && n1 % 3 == 0){
+    printf("Es multiplo de ambos");
+}
+else if(n1 % 3 == 0){
+    printf("Es multiplo de 3");
+}
+else if(n1 % 2 == 0){
+    printf("Es multiplo de 2");
+}
+    
+else{
+if(n1 % 3 == 0){
+    printf("es multiplo de 3");
+}
+else{
+    printf("no es multiplo de ninguno");
+}
+}
+return 0;
+
+}
+
+ejercicio d)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+int n1;
+int n2;
+int n3;
+puts("ingrese un numero:");
+scanf("%d", &n1);
+scanf("%d", &n2);
+scanf("%d", &n3);
+if(n1 > n2 && n1 > n3){
+    printf("n1 es el mayor");
+}
+else if(n2 > n3){
+    printf("n2 es el mayor");
+}
+else{
+    printf("n3 es el mayor");
+}
+return 0;
+
+}
