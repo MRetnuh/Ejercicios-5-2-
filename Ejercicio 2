@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(int argc, char *argv[]){
+    int sueldo;
+    int comision1;
+    int comision2;
+    int comision3;
+    puts("Ingrese el sueldo base: ");
+    scanf("%d", &sueldo);
+    puts("Ingrese el precio de las comisiones: ");
+    scanf("%d %d %d", &comision1, &comision2, &comision3);
+    double extra1 = comision1 * 0.10;
+    double extra2 = comision2 * 0.10;
+    double extra3 = comision3 * 0.10;
+    double totalcomisiones = extra3 + extra2 + extra1 + comision1 + comision2 + comision3;
+    double totalmensual = totalcomisiones + sueldo;
+    printf("El total del mes es %.2f\n", totalmensual);
+    return 0;
+}
