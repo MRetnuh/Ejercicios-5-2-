@@ -14,8 +14,8 @@ int main(int argc, char *argv[]){
     scanf("%d", &cef);
     scanf("%d", &ctf);
 /*
-Se establecen las variables cp 1, 2 y 3 (que son las calificaciones parciales), cef (calificacion de examen final) y ctf (calificacion de trabajo final)
-, cuyos valores los tiene que ingresar el usuario
+Se establecen las variables cp 1, 2 y 3 (que son las calificaciones parciales), cef (calificacion de examen final) y ctf 
+(calificacion de trabajo final), cuyos valores los tiene que ingresar el usuario
 */
     double calificacionfinal = (cp1 + cp2 + cp3) / 3 * 0.55 + cef * 0.3 + ctf * 0.15;
     if(calificacionfinal >= 6.00){
