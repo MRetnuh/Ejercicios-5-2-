@@ -19,7 +19,8 @@ Se establecen las variables sueldo y comision 1,2 y 3, las cuales el usuario tie
     double totalmensual = totalcomisiones + sueldo;
     printf("El total del mes es %.2f\n", totalmensual);
 /*
-Teniendo ingresados los valores, se consigue el %10 de estos, para luego sumar los extras (porcentajes) y las comisiones. La suma de estos (totalcomisiones) se lo suma con el sueldo y se imprime el resultado
+Teniendo ingresados los valores, se consigue el %10 de estos, para luego sumar los extras (porcentajes) y las comisiones. 
+La suma de estos (totalcomisiones) se lo suma con el sueldo y se imprime el resultado
 */
     return 0;
 }
