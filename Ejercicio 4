@@ -7,6 +7,10 @@ int main(int argc, char *argv[]){
     puts("ingrese dos numeros: ");
     scanf("%d", &n1);
     scanf("%d", &n2);
+/*
+Se establecen las variables n1 y n2 (el primero debe ser el menor y el segundo el mayor ya que son los limites), 
+cuyos valores los tiene que ingresar el usuario
+*/
     while(n2 > n1){
         if(n2 % 2 == 0){
             printf("%d ", n2);
@@ -15,5 +19,8 @@ int main(int argc, char *argv[]){
     }
     printf("\n");
     return 0;
-
+/*
+Teniendo los valores, se entra en un bucle que perdurara hasta que n2 sea menor a n1. Mientras funcione, el valor de n2 desciende uno en uno y si uno 
+de estos valores es par, se imprime
+*/
 }
