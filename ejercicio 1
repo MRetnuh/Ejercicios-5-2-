@@ -4,6 +4,9 @@ int main(int argc, char *argv[]){
     int cantalumnos;
     puts("La cantidad de alumnos que van al viaje de alumnos es: ");
    scanf("%d", &cantalumnos);
+/*
+Establezco la variable cantalumnos y el usuario tiene que escribir cuantos alumnos habra en el viaje
+*/
    if(cantalumnos >= 100){
        printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es: %d\n", cantalumnos, cantalumnos * 500);
    }
@@ -16,5 +19,8 @@ int main(int argc, char *argv[]){
    if(cantalumnos <= 30){
        printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es $6000", cantalumnos);
    }
+/*
+De acuerdo a cuantos habran, el monto a pagar sera diferente (6000 o mas).
+*/
     return 0;
 }
