@@ -13,6 +13,10 @@ int main(int argc, char *argv[]){
     scanf("%d", &cp3);
     scanf("%d", &cef);
     scanf("%d", &ctf);
+/*
+Se establecen las variables cp 1, 2 y 3 (que son las calificaciones parciales), cef (calificacion de examen final) y ctf (calificacion de trabajo final)
+, cuyos valores los tiene que ingresar el usuario
+*/
     double calificacionfinal = (cp1 + cp2 + cp3) / 3 * 0.55 + cef * 0.3 + ctf * 0.15;
     if(calificacionfinal >= 6.00){
         printf("Felicidades, aprobaste con un %.2f\n", calificacionfinal);
@@ -20,5 +24,9 @@ int main(int argc, char *argv[]){
     else{
         printf("Desaprobaste con un %.2f\n", calificacionfinal);
     }
+/*
+Teniendo los valores, se comprueba si el usuario aprobo o no, si este tiene un 6 o mas. Esto se realiza a traves de la suma del: porcentaje del promedio 
+de las sumas de los cp, porcentaje de cef y porcentaje del ctf
+*/
 return 0;
 }
