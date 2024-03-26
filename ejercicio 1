@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(int argc, char *argv[]){
+    int cantalumnos;
+    puts("La cantidad de alumnos que van al viaje de alumnos es: ");
+   scanf("%d", &cantalumnos);
+   if(cantalumnos >= 100){
+       printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es: %d\n", cantalumnos, cantalumnos * 500);
+   }
+   if(cantalumnos >= 50 && cantalumnos <= 99){
+       printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es: %d\n", cantalumnos, cantalumnos * 400);
+   }
+   if(cantalumnos <= 49 && cantalumnos >=30){
+       printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es: %d\n", cantalumnos, cantalumnos * 300);
+   }
+   if(cantalumnos <= 30){
+       printf("Ya que son %d alumnos, el monto a pagar por el servicio de viajes es $6000", cantalumnos);
+   }
+    return 0;
+}
