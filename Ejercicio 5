@@ -7,4 +7,8 @@ int main(int argc, char *argv[]){
     int PuntodeEncuentro = (posiciónInicial1 + posiciónInicial2) / 2;
     printf("el punto de encuentro de la persona en el km %d y la otra en el km %d es %d\n", posiciónInicial1, posiciónInicial2, PuntodeEncuentro);
     return 0;
+/*
+Se establecen las variables posicioninicial 1 y 2, cuyos valores son 70 y 150 (que son las posiciones en kilometros de las dos personas), 
+luego se realiza la division entre la suma de ambas variables, que equivale al punto de encuentro, y despues se imprime el resultado.
+*/
 }
