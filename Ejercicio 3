@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+    int cp1;
+    int cp2;
+    int cp3;
+    int cef;
+    int ctf;
+    puts("Introduce tus notas: ");
+    scanf("%d", &cp1);
+    scanf("%d", &cp2);
+    scanf("%d", &cp3);
+    scanf("%d", &cef);
+    scanf("%d", &ctf);
+    double calificacionfinal = (cp1 + cp2 + cp3) / 3 * 0.55 + cef * 0.3 + ctf * 0.15;
+    if(calificacionfinal >= 6.00){
+        printf("Felicidades, aprobaste con un %.2f\n", calificacionfinal);
+    }
+    else{
+        printf("Desaprobaste con un %.2f\n", calificacionfinal);
+    }
+return 0;
+}
