@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <string.h> // Incluir esta biblioteca para usar la función strcmp
+#include <string.h>
 
 int main(int argc, char *argv[]) {
     char c[3];
     puts("¿Tienes crédito? ");
-    scanf("%s", c); // No es necesario usar &c, ya que c es un array
+    scanf("%s", c); 
 
-    if(strcmp(c, "si") == 0) { // Utiliza strcmp para comparar cadenas de caracteres
+    if(strcmp(c, "si") == 0) { 
         printf("Hola estimado\n");
     } else {
         printf("Consígate, gil\n");
