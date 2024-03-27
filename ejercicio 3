@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+	int a;
+	puts("Ingrese su numero: ");
+	scanf("%d", &a);
+if(a < 0){
+	puts("El numero que ingreso es negativo. Ingrese uno positivo");
+}
+if(a > 0){
+if(a % 2 == 0){
+	printf("El numero %d es par", a);
+}
+else{
+	printf("El numero %d es impar", a);
+}
+}
+	return 0;	
+}
