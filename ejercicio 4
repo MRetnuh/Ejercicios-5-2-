@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+	int p1;
+	int p2;
+	int p3;
+	int p4;
+	int tarea;
+	puts("Ingrese las notas de la prueba y de la tarea ");
+	scanf("%d %d %d %d %d", &p1, &p2, &p3, &p4, &tarea);
+	double promedio = (p1 + p2 + p3 + p4 + tarea) / 5;
+if(promedio >= 6.00){
+printf("Felicidades, aprobaste con un %.2f\n", promedio);	
+}
+else{
+	printf("Desaprobaste con un %.2f\n", promedio);
+}
+
+	return 0;	
+}
