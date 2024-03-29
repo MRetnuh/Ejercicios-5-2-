@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int sueldo;
+    puts("Ingrese su sueldo: ");
+    scanf("%d", &sueldo);
+    if(sueldo < 8000){
+        printf("Tu sueldo ahora es: %.2f\n", sueldo + (sueldo * 0.15));
+    }
+     if(sueldo > 8000){
+        printf("Tu sueldo ahora es: %.2f\n", sueldo + (sueldo * 0.12));
+    }
+    return 0;
+}
