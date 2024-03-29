@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int padre = 50;
+    int hijo = 20;
+    int original = 20;
+    while(hijo < padre){
+     hijo++;
+     padre++;
+     if(hijo * 2 == padre){
+         printf("Dentro de %d años la edad del padre sera el doble que la del hijo\n", hijo - original);
+     }
+    }
+    return 0;
+    }
