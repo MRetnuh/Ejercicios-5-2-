@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int examen1;
+    int examen2;
+    puts("Ingresa las calificaciones de tus examenes");
+    scanf("%d %d", &examen1, &examen2);
+    if(examen1 >= 7 && examen2 >= 7 || examen2 >= 8 && examen1 >= 8){
+        puts("Apto");
+    }
+    if(examen1 < 7 && examen2 < 7){
+        puts("No apto");
+    }
+    return 0;
+}
