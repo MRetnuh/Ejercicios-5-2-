@@ -2,7 +2,7 @@
 #include<string.h>
 
 int main(int argc, char *argv[]){
-	char *genero;
+	char genero[20];
 	int edad;
 	int peso;
 	double fcp;
@@ -10,10 +10,10 @@ int main(int argc, char *argv[]){
 	scanf("%s", genero);
 	puts("cual es tu edad?");
 	scanf("%d", &edad);
-	puts("Cual es tu peso?")
+	puts("Cual es tu peso?");
 	scanf("%d", &peso);
 	if(strcmp(genero, "hombre") == 0){
-		fcp = ((210 – (0,5 * edad)) – peso * 0,1 ) + 4);
+		fcp = ((210 – (0,5 * edad)) – peso * 0,1 ) + 4;
 		printf("Tu fcp es %.2f\n", fcp);
 	}
 	if(strcmp(genero, "mujer") == 0){
