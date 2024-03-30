@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+int sueldo;
+puts("Ingrese su sueldo: ");
+scanf("%d", &sueldo);
+
+if(sueldo <= 202){
+    printf("El impuesto cuesta 0$");
+}
+if(sueldo > 202 && sueldo <= 607){
+    printf("El impuesto cuesta %.2f$\n", sueldo * 0.05);
+}
+if(sueldo > 607 && sueldo <= 1013){
+    printf("El impuesto cuesta %.2f$\n", sueldo * 0.10);
+}
+if(sueldo > 1013 && sueldo <= 1048){
+    printf("El impuesto cuesta %.2f$\n", sueldo * 0.15);
+}
+if(sueldo > 1048){
+    printf("El impuesto cuesta %.2f$\n", sueldo * 0.25);
+}
+
+return 0;
+}
