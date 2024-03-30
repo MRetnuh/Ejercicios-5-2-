@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(){
+int compra;
+puts("Ingrese el precio de su compra: ");
+scanf("%d", &compra);
+printf("Gracias al descuento, en vez de pagar %d$, solo tendra que pagar %.2f$\n", compra, compra * 0.15);
+    return 0;
+}
