@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]){
+int hombres;
+int mujeres;
+int curso;
+double ph;
+double pm;
+puts("Ingrese la cantidad de alumnos: ");
+scanf("%d", &curso);
+
+puts("Ingrese la cantidad de hombres y mujeres: ");
+scanf("%d %d", &hombres, &mujeres);
+
+ph = (hombres * 100) / curso;
+pm = (mujeres * 100) / curso;
+
+printf("El porcentaje de hombres es %.2f y el de mujeres es %.2f dentro de %d estudiantes\n", ph, pm, curso);
+
+return 0;
+}
