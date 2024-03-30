@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(){
+int capital;
+puts("Ingrese su capital: ");
+scanf("%d", &capital);
+printf("El dinero ahorrado despues de un mes es %.2f$\n", capital * 0.02);
+    return 0;
+}
