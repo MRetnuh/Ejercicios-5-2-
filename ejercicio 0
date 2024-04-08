@@ -1,22 +1,23 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main() {
     int examen1;
     int examen2;
     
-    printf("Ingresa las calificaciones de tus exámenes: ");
+    printf("Ingresa las calificaciones de tus examenes: ");
     scanf("%d %d", &examen1, &examen2);
     
-    if (examen1 >= 0 && examen1 <= 10 && examen2 >= 0 && examen2 <= 10) {
+    if (examen1 >= 1 && examen1 <= 10 && examen2 >= 0 && examen2 <= 10) {
         if (examen1 >= 7  && examen2 >= 8) {
             printf("Apto\n");
-        } else if (examen1 < 7 && examen2 < 7) {
+        } 
+    }
+		else if (examen1 < 7 && examen2 < 7) {
             printf("No apto\n");
-        } else {
-            printf("No existe esa nota\n");
-        }
-    } else {
-        printf("Las calificaciones deben estar entre 0 y 10\n");
+        } 
+        
+    else {
+        printf("Las calificaciones deben estar entre 1 y 10\n");
     }
     
     return 0;
