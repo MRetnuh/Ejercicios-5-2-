@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+int hora;
+int minutos;
+puts("Ingrese la hora en formato hh:mm: ");
+scanf("%d", &hora);
+puts("Ingrese los minutos en formato hh:mm: ");
+scanf("%d", &minutos);
+if(hora < 12 && minutos < 60){
+	printf("La hora en formato am/pm es: %d %d am", hora, minutos);
+}
+else if(hora > 12 && hora < 25 && minutos < 60){
+	printf("La hora en formato am/pm es: %d %d pm", hora - 12, minutos);
+}
+else{
+	puts("No existe esa hora");
+}
+return 0;
+}
