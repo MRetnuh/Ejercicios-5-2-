@@ -3,16 +3,22 @@
 int main(int argc, char *argv[]) {
     int examen1;
     int examen2;
-    puts("Ingresa las calificaciones de tus examenes");
+    
+    printf("Ingresa las calificaciones de tus exámenes: ");
     scanf("%d %d", &examen1, &examen2);
-    if(examen1 >= 7  && examen2 >= 8){
-        puts("Apto");
+    
+    if (examen1 >= 0 && examen1 <= 10 && examen2 >= 0 && examen2 <= 10) {
+        if (examen1 >= 7  && examen2 >= 8) {
+            printf("Apto\n");
+        } else if (examen1 < 7 && examen2 < 7) {
+            printf("No apto\n");
+        } else {
+            printf("No existe esa nota\n");
+        }
+    } else {
+        printf("Las calificaciones deben estar entre 0 y 10\n");
     }
-    if(examen1 < 7 && examen2 < 7){
-        puts("No apto");
-    }
-else{
-printf("No existe esa nota");
-}
+    
     return 0;
 }
+
