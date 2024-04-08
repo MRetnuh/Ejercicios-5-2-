@@ -5,11 +5,14 @@ int main(int argc, char *argv[]) {
     int examen2;
     puts("Ingresa las calificaciones de tus examenes");
     scanf("%d %d", &examen1, &examen2);
-    if(examen1 >= 7 && examen2 >= 7 || examen2 >= 8 && examen1 >= 8){
+    if(examen1 >= 7  && examen2 >= 8){
         puts("Apto");
     }
     if(examen1 < 7 && examen2 < 7){
         puts("No apto");
     }
+else{
+printf("No existe esa nota");
+}
     return 0;
 }
