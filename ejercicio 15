@@ -6,12 +6,11 @@ int mujeres;
 int curso;
 double ph;
 double pm;
-puts("Ingrese la cantidad de alumnos: ");
-scanf("%d", &curso);
 
 puts("Ingrese la cantidad de hombres y mujeres: ");
 scanf("%d %d", &hombres, &mujeres);
 
+curso = hombres + mujeres;
 ph = (hombres * 100) / curso;
 pm = (mujeres * 100) / curso;
 
