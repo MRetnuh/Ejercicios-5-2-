@@ -1,17 +1,26 @@
-#include <stdio.h>
+include <stdio.h>
 
 int main(int argc, char *argv[]) {
     int nota;
     puts("Ingrese su nota: ");
     scanf("%d", &nota);
+   if(nota > 0 && nota < 11){
     if(nota > 6){
         puts("Aprobado");
     }
     if(nota >= 8){
         puts("Felicitaciones");
     }
-    else{
+    
+    if(nota<6){
+        puts("reprobado");
+    }
+     if(nota == 1){
         puts("Debes esforzarte mas");
     }
+   }
+   else{
+       puts("Ingrese una nota valida");
+   }
     return 0;
 }
