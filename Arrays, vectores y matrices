@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 int main (){
-int x;
-int y;
-    int A [x][y];
+    int A [3][3];
     int i, j;
     printf ("Este programa te pide una matriz de 3x3 \n \n");
-puts("Ingrese el tamaño de la matriz");
-scanf("%d %d", &x, &y);
     // ciclo for para pedir datos de la matriz
 	for (i=0; i<3; i++)
 	{
