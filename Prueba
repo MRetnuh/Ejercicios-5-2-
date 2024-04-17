@@ -1,0 +1,151 @@
+#include <stdio.h>
+
+void Ejercicio1(){
+    int horaE;
+    int horaS;
+    int resultado;
+puts("Ingrese las horas de entrada y salida: ");  
+scanf("%d %d", &horaE, &horaS);
+/*Se establecen las variables horaE, horaS (que son hora de entrada y salida) y resultado (el precio a pagar), cuyos valores los ingresa el usuario*/
+if(horaS > 2300 || horaE > 2300){
+     puts("Ingrese horas validas");
+}
+if(horaS < 0 || horaE < 0){
+    puts("Ingrese horas validas");
+}
+if (horaS < horaE){
+    puts("Ingrese una hora de salida valida");
+}
+else{
+    resultado = 500 + 250* ((horaS - horaE) / 100);
+printf("El precio a pagar es %d\n", resultado);
+}
+/*Si la horaS u horaE son mayores que 2300, o la horaE es mayor a la HoraS, se solicita datos validos. Sino, se realiza la operacion para saber cuanto pagar*/
+
+}
+
+void Ejercicio2(){
+    double n1;
+    double n2;
+    int resultado = 0;
+puts("Ingrese los numeros: ");  
+/*Se establecen las variables n1 y n2, cuyos valores los ingresa el usuario*/
+scanf("%lf %lf", &n1, &n2);
+if(n1 < 0 || n1 != (int)n1 || n2 < 0 || n2 != (int)n2){
+    puts("Ingrese numeros validos");
+}
+   
+else{
+for(int i = 0; i < n1; i++){
+resultado += n2;
+}
+printf("El producto por suma sucesiva es %d\n", resultado);
+}
+/*Con los valores ingresados, si estos son negativos o con decimales, se exige que sean enteros positivos. Si son lo contrario, se realiza un for donde se suma n2 
+consigo mismo para reemplazar la multiplicacion*/
+}
+
+void Ejercicio3(){
+    int K;
+    int P;
+    double H;
+    int M;
+    double consumo100;
+    double consumo1;
+    puts("Ingrese los valores de kilometros:");
+    scanf("%d", &K);
+    puts("Ingrese el precio:");
+    scanf("%d", &P);
+    puts("Ingrese las horas:");
+    scanf("%lf", &H);
+     puts("Ingrese los minutos:");
+    scanf("%d", &M);
+    /*Se establecen las variables K, P, H y M (cuyos valores son los kilometros, el precio, las horas y los minutos respectivamente). Consumo100 
+    y consumo1 son el consumo por 100 y 1 kilometro. Todos estos valores los ingresa el usuario*/
+    if(K < 0 || P < 0 || H < 0 || M < 0){
+        puts("Ingrese numeros validos");
+    }
+    else{
+        H = H + (M / 60);
+consumo100 = (K / H) / 100;
+consumo1 = K / H;
+printf("El consumo de litros fue %.2f y el precio total del combustible usado fue %.2f cada 100Km\n", consumo100, consumo100 * P);
+printf("El consumo de litros fue %.2f y el precio total del combustible usado fue %.2f cada 1Km\n", consumo1, consumo1 * P);
+    }
+    /*Si K, P, H o M son menores a 0, se exigen valores validos. Sino, se realizan operaciones para saber cuanto fue el consumo por kilometro y por 100 kilometros*/
+}
+
+
+void Ejercicio4(){
+    int precio;
+    int entradas;
+    puts("Ingrese el precio por entrada: ");
+    scanf("%d", &precio);
+    puts("Ingrese la cantidad de entradas compradas:");
+    scanf("%d", &entradas);
+    /*Se establecen las variables precio y las entradas, cuyos valores los ingresa el usuario*/
+    if(entradas < 0 || precio <= 0){
+        puts("Ingrese un valor valido");
+    }
+    else if(entradas == 2){
+        printf("El precio a pagar es %.2f\n", (precio * 2) - (precio * 2 * 0.10));
+    }
+    else if(entradas == 3){
+        printf("El precio a pagar es %.2f\n", (precio * 3) - (precio * 3 * 0.15));
+    }
+    else if(entradas == 4){
+        printf("El precio a pagar es %.2f\n", (precio * 4) - (precio * 4 * 0.20));
+    }
+    else if(entradas > 4){
+        printf("El precio a pagar es %d\n", precio * entradas);
+    }
+    /*Con los valores establecidos, si estos son menor o igual a 0, se exigen valores validos. Sino, de acuerdo a las entradas compradas, se realiza o no un descuento*/
+}
+
+
+void Ejercicio5(){
+    int personas;
+    puts("Ingrese la cantidad de personas:");
+    scanf("%d", &personas);
+    /*Se establece la variable personas, cuyo valor lo ingresa el usuario*/
+    if(personas <= 0){
+        puts("Ingrese un valor valido");
+    }
+    else if(personas > 200 && personas <= 300){
+        printf("El costo por todos los platos es: %d\n", personas * 5500);
+    }
+    else if(personas > 300){
+        printf("El costo por todos los platos es: %d\n", personas * 4500);
+    }
+    else if(personas < 200){
+         printf("El costo por todos los platos es: %d\n", personas * 6500);
+    }
+    /*Despues de ingresar el valor, si este es igual o menor a 0, se exige un valor valido. Sino, de acuerdo a la cantidad de personas, el precio por persona cambiara junto
+    al costo total*/
+}
+int main(){
+    int opcion;
+    puts("Elija el ejercicio:");
+    scanf("%d", &opcion);
+    switch(opcion){
+        case 1:
+        Ejercicio1();
+        break;
+         case 2:
+        Ejercicio2();
+        break;
+         case 3:
+        Ejercicio3();
+        break;
+         case 4:
+        Ejercicio4();
+        break;
+         case 5:
+        Ejercicio5();
+        break;
+         default:
+        puts("Ese ejercicio no existe");
+        break;
+    }
+    return 0;
+}
